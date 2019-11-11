@@ -1,0 +1,12 @@
+databaseChangeLog:
+- changeSet:
+    id: 1552751499512-4
+    author: Dmitry (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: Tsk_Due_Date
+            type: TIMESTAMP
+        tableName: Task
+

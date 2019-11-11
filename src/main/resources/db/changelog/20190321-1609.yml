@@ -1,0 +1,21 @@
+databaseChangeLog:
+- changeSet:
+    id: 1553173780841-3
+    author: dumetski (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: Tsk_Date_Modified
+            type: TIMESTAMP
+        tableName: Task
+- changeSet:
+    id: 1553173780841-4
+    author: dumetski (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: Usr_Date_Modified
+            type: TIMESTAMP
+        tableName: User

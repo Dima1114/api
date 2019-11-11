@@ -1,0 +1,61 @@
+databaseChangeLog:
+- changeSet:
+    id: 1545483881491-1
+    author: Dmitry (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: UserPK
+            name: Usr_Id
+            type: BIGINT
+        - column:
+            name: Usr_Email
+            type: VARCHAR(255)
+        - column:
+            name: Usr_Enabled
+            type: BIT
+        - column:
+            name: Usr_Username
+            type: VARCHAR(255)
+        tableName: User
+- changeSet:
+    id: 1545483881491-2
+    author: Dmitry (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: Usr_Id
+            type: BIGINT
+        - column:
+            name: roles
+            type: VARCHAR(255)
+        tableName: User_Role
+- changeSet:
+    id: 1545483881491-3
+    author: Dmitry (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: Usr_Username
+        constraintName: UKdeduhw21idiqfoyhyu90m40ad
+        tableName: User
+- changeSet:
+    id: 1545483881491-4
+    author: Dmitry (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: Usr_Id
+        baseTableName: User_Role
+        constraintName: FK2tvhv936y55brtf478v3iqct0
+        deferrable: false
+        initiallyDeferred: false
+        referencedColumnNames: Usr_Id
+        referencedTableName: User
+        validate: true
+

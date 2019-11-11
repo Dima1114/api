@@ -1,0 +1,27 @@
+databaseChangeLog:
+- changeSet:
+    id: 1545762368569-3
+    author: Dmitry (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: Tsk_Usr_Id
+            type: bigint
+        tableName: Task
+- changeSet:
+    id: 1545762368569-4
+    author: Dmitry (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: Tsk_Usr_Id
+        baseTableName: Task
+        constraintName: FK59m6b9l0ilg8kimyg6wkoi4du
+        deferrable: false
+        initiallyDeferred: false
+        referencedColumnNames: Usr_Id
+        referencedTableName: User
+        validate: true
+

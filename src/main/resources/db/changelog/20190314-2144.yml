@@ -1,0 +1,28 @@
+databaseChangeLog:
+- changeSet:
+    id: 1552589138307-3
+    author: Dmitry (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: Tsk_Status
+            type: integer
+        tableName: Task
+- changeSet:
+    id: 1552589138307-4
+    author: Dmitry (generated)
+    changes:
+    - dropColumn:
+        columnName: Tsk_Bin
+        tableName: Task
+- changeSet:
+    id: 1552589138307-5
+    author: Dmitry (generated)
+    changes:
+    - dropColumn:
+        columnName: Tsk_Done
+        tableName: Task
+

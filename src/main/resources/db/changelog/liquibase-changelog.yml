@@ -1,0 +1,23 @@
+databaseChangeLog:
+- include:
+      file: src/main/resources/db/changelog/20181222-1604.yml
+- include:
+      file: src/main/resources/db/changelog/20181222-1608.yml
+- include:
+      file: src/main/resources/db/changelog/20181225-2059.yml
+- include:
+      file: src/main/resources/db/changelog/20181225-2126.yml
+- include:
+      file: src/main/resources/db/changelog/20190125-1302.yml
+- include:
+      file: src/main/resources/db/changelog/20190314-2144.yml
+- include:
+      file: src/main/resources/db/changelog/20190316-1851.yml
+- include:
+      file: src/main/resources/db/changelog/20190320-1522.yml
+- include:
+      file: src/main/resources/db/changelog/20190320-1758.yml
+- include:
+      file: src/main/resources/db/changelog/20190321-1609.yml
+- include:
+      file: src/main/resources/db/changelog/20190322-1446.yml

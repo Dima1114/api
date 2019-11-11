@@ -1,0 +1,10 @@
+databaseChangeLog:
+- changeSet:
+    id: 1553255219489-1
+    author: dumetski (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: Usr_Email
+        constraintName: UK1r9k8bjeyyf6een9t0yx7oxb9
+        tableName: User
+

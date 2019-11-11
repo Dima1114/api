@@ -1,0 +1,11 @@
+databaseChangeLog:
+- changeSet:
+    id: 1553084541164-1
+    author: dumetski (generated)
+    changes:
+    - modifyDataType:
+          columnName: Tsk_Due_Date
+          newDataType: DATE
+          schemaName: venus
+          tableName: Task
+

@@ -1,0 +1,44 @@
+databaseChangeLog:
+- changeSet:
+    id: 1545760790250-3
+    author: Dmitry (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: TaskPK
+            name: Tsk_Id
+            type: BIGINT
+        - column:
+            name: Tsk_Date_Added
+            type: timestamp
+        - column:
+            name: Tsk_Comment
+            type: VARCHAR(255)
+        - column:
+            name: Tsk_Complete
+            type: timestamp
+        - column:
+            name: Tsk_Bin
+            type: BIT
+        - column:
+            name: Tsk_Done
+            type: BIT
+        - column:
+            name: Tsk_Title
+            type: VARCHAR(255)
+        tableName: Task
+- changeSet:
+    id: 1545760790250-4
+    author: Dmitry (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: Usr_Date_Added
+            type: TIMESTAMP
+        tableName: User
+

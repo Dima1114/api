@@ -1,0 +1,30 @@
+databaseChangeLog:
+- changeSet:
+    id: 1545484103303-2
+    author: Dmitry (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: Usr_Password
+            type: varchar(255)
+        tableName: User
+- changeSet:
+    id: 1545484103303-3
+    author: Dmitry (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: Usr_Ref_Token
+            type: varchar(255)
+        tableName: User
+- changeSet:
+    id: 1545484103303-4
+    author: Dmitry (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: Usr_Ref_Token
+        constraintName: UKh7w62oysnq751htjmx64exw2f
+        tableName: User
+
