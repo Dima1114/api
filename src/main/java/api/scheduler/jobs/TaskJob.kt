@@ -1,7 +1,7 @@
 package api.scheduler.jobs
 
 import venus.utillibrary.model.api.Task
-import api.entity.TaskStatus
+import venus.utillibrary.model.api.TaskStatus
 import api.jms.JmsMessage
 import venus.utillibrary.repository.api.TaskRepository
 import api.scheduler.executeTomorrow

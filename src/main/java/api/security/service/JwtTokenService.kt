@@ -1,8 +1,8 @@
 package api.security.service
 
-import api.security.model.JwtUserDetails
 import org.springframework.security.core.userdetails.UserDetails
 import venus.utillibrary.model.base.Role
+import venus.utillibrary.security.JwtUserDetails
 
 interface JwtTokenService {
 

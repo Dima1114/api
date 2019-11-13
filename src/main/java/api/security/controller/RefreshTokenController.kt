@@ -1,7 +1,5 @@
 package api.security.controller
 
-import venus.utillibrary.security.exceptions.JwtAuthenticationException
-import api.security.model.JwtUserDetails
 import api.security.model.LoginResponse
 import api.security.service.JwtTokenService
 import api.security.service.extract
@@ -10,6 +8,8 @@ import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
+import venus.utillibrary.security.JwtUserDetails
+import venus.utillibrary.security.exceptions.JwtAuthenticationException
 import javax.servlet.http.HttpServletRequest
 
 @RestController

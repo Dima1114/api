@@ -1,6 +1,6 @@
 package api.controller
 
-import api.entity.TaskStatus
+import venus.utillibrary.model.api.TaskStatus
 import venus.utillibrary.repository.api.TaskRepository
 import org.springframework.web.bind.annotation.PatchMapping
 import org.springframework.web.bind.annotation.RequestBody

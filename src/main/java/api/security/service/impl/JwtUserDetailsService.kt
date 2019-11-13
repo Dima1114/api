@@ -1,12 +1,12 @@
 package api.security.service.impl
 
-import api.security.model.JwtUserDetails
 import api.service.UserService
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
+import venus.utillibrary.security.JwtUserDetails
 
 @Service("userDetailsService")
 class JwtUserDetailsService(private val userService: UserService) : UserDetailsService {

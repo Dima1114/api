@@ -1,6 +1,6 @@
 package api.controller
 
-import api.entity.TaskStatus
+import venus.utillibrary.model.api.TaskStatus
 import venus.utillibrary.repository.api.TaskRepository
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.anyOrNull

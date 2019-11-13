@@ -1,11 +1,11 @@
 package api.service
 
-import api.security.model.JwtUserDetails
-import api.security.model.getUser
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.context.SecurityContextHolder
 import venus.utillibrary.model.base.User
+import venus.utillibrary.security.JwtUserDetails
+import venus.utillibrary.security.getUser
 
 fun getUserFromContext(): User? {
     val auth = getContext()

@@ -3,7 +3,7 @@ package api
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = ["api", "venus.utillibrary.enumeration"])
 class ApiApplication
 
 fun main(args: Array<String>) {

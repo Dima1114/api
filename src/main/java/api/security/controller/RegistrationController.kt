@@ -2,7 +2,6 @@ package api.security.controller
 
 import api.handler.getErrors
 import api.security.model.ErrorResponse
-import api.security.model.JwtUserDetails
 import api.security.model.RegistrationRequest
 import api.security.model.RegistrationResponse
 import api.security.service.JwtTokenService
@@ -12,6 +11,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.validation.Errors
 import org.springframework.web.bind.annotation.*
+import venus.utillibrary.security.JwtUserDetails
 import javax.validation.Valid
 
 @RestController

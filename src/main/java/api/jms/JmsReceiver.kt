@@ -7,8 +7,8 @@ import org.springframework.jms.annotation.JmsListener
 import org.springframework.stereotype.Component
 import java.util.concurrent.atomic.AtomicInteger
 
-@Component
-@Profile("!test")
+//@Component
+//@Profile("!test")
 class JmsReceiver(val emailService: EmailService) {
 
     companion object : KLogging()

@@ -1,6 +1,5 @@
 package api.config
 
-import api.security.RoleSecured
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.access.SecurityConfig
 import org.springframework.security.access.annotation.AnnotationMetadataExtractor
@@ -8,6 +7,7 @@ import org.springframework.security.access.annotation.SecuredAnnotationSecurityM
 import org.springframework.security.access.method.MethodSecurityMetadataSource
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration
+import venus.utillibrary.model.base.RoleSecured
 
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)

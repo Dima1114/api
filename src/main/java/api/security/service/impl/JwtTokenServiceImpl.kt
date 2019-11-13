@@ -1,8 +1,6 @@
 package api.security.service.impl
 
 import api.security.config.JwtSettings
-import venus.utillibrary.security.exceptions.JwtAuthenticationException
-import api.security.model.JwtUserDetails
 import api.security.service.JwtTokenService
 import io.jsonwebtoken.ExpiredJwtException
 import io.jsonwebtoken.JwtException
@@ -12,6 +10,8 @@ import mu.KLogging
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.stereotype.Component
 import venus.utillibrary.model.base.Role
+import venus.utillibrary.security.JwtUserDetails
+import venus.utillibrary.security.exceptions.JwtAuthenticationException
 import java.util.*
 
 @Component
