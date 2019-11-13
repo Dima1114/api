@@ -8,6 +8,7 @@ import org.amshove.kluent.`should contain all`
 import org.junit.Test
 import org.springframework.security.access.SecurityConfig
 import org.springframework.security.access.annotation.SecuredAnnotationSecurityMetadataSource
+import venus.utillibrary.model.base.Role
 
 class GlobalMethodSecurityConfigTest {
 

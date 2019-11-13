@@ -1,6 +1,6 @@
 package api.security.controller
 
-import venus.utillibrary.model.api.User
+import venus.utillibrary.model.base.User
 import api.security.service.JwtTokenService
 import api.service.UserService
 import com.nhaarman.mockito_kotlin.any

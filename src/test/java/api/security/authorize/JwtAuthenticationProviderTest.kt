@@ -13,6 +13,7 @@ import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
+import venus.utillibrary.model.base.Role
 
 @RunWith(MockitoJUnitRunner::class)
 class JwtAuthenticationProviderTest {

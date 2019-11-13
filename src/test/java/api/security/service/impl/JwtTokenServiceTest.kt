@@ -1,6 +1,5 @@
 package api.security.service.impl
 
-import venus.utillibrary.model.api.User
 import venus.utillibrary.repository.base.UserRepository
 import api.security.config.JwtSettings
 import venus.utillibrary.security.exceptions.JwtAuthenticationException
@@ -17,6 +16,8 @@ import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
 import org.springframework.util.ResourceUtils
+import venus.utillibrary.model.base.Role
+import venus.utillibrary.model.base.User
 
 
 @RunWith(MockitoJUnitRunner::class)

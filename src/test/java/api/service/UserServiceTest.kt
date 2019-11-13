@@ -1,11 +1,12 @@
 package api.service
 
-import venus.utillibrary.model.api.User
 import api.jms.JmsMessage
 import venus.utillibrary.repository.base.UserRepository
 import api.service.impl.UserServiceImpl
 import com.nhaarman.mockito_kotlin.*
 import org.amshove.kluent.`should be equal to`
+import org.amshove.kluent.`should equal`
+import org.amshove.kluent.`should not equal`
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyString
@@ -14,6 +15,7 @@ import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
 import org.springframework.jms.core.JmsTemplate
 import org.springframework.security.core.userdetails.UsernameNotFoundException
+import venus.utillibrary.model.base.User
 import java.util.*
 
 @RunWith(MockitoJUnitRunner::class)

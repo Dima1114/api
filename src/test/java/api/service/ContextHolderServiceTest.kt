@@ -2,10 +2,12 @@ package api.service
 
 import api.security.model.JwtAuthenticationToken
 import api.security.model.JwtUserDetails
+import org.amshove.kluent.`should equal`
 import org.junit.Before
 import org.junit.Test
 import org.springframework.security.authentication.AnonymousAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
+import venus.utillibrary.model.base.Role
 
 class ContextHolderServiceTest {
 

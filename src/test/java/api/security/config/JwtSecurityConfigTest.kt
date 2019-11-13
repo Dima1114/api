@@ -3,6 +3,7 @@ package api.security.config
 import api.security.authorize.JwtAuthenticationProvider
 import api.security.authorize.JwtAuthenticationTokenFilter
 import api.security.authorize.SkipPathAndMethodsRequestMatcher
+import api.security.exceptions.ErrorHandler
 import api.security.login.JwtLoginProvider
 import com.nhaarman.mockito_kotlin.times
 import com.nhaarman.mockito_kotlin.verify

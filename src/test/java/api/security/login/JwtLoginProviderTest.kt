@@ -15,6 +15,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.AuthenticationException
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+import venus.utillibrary.model.base.Role
 
 @RunWith(MockitoJUnitRunner::class)
 class JwtLoginProviderTest {

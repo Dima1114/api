@@ -1,6 +1,5 @@
 package api.security.service.impl
 
-import venus.utillibrary.model.api.User
 import api.service.UserService
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.whenever
@@ -11,6 +10,7 @@ import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
 import org.springframework.security.core.userdetails.UsernameNotFoundException
+import venus.utillibrary.model.base.User
 import java.util.*
 
 @RunWith(MockitoJUnitRunner::class)

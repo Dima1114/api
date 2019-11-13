@@ -24,6 +24,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
+import venus.utillibrary.model.base.Role
 
 @RunWith(MockitoJUnitRunner::class)
 class LoginControllerTest {

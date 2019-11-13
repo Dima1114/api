@@ -1,7 +1,6 @@
 package api.scheduler.jobs
 
 import venus.utillibrary.model.api.Task
-import venus.utillibrary.model.api.User
 import api.jms.JmsMessage
 import venus.utillibrary.repository.api.TaskRepository
 import com.nhaarman.mockito_kotlin.any
@@ -21,6 +20,7 @@ import org.quartz.Scheduler
 import org.quartz.Trigger
 import org.quartz.TriggerKey
 import org.springframework.jms.core.JmsTemplate
+import venus.utillibrary.model.base.User
 import java.util.*
 
 @RunWith(MockitoJUnitRunner::class)
