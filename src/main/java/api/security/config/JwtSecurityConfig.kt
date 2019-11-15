@@ -21,8 +21,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.security.web.savedrequest.HttpSessionRequestCache
 import java.util.*
 
-@Configuration
-@EnableWebSecurity
+//@Configuration
+//@EnableWebSecurity
 class JwtSecurityConfig(private val authenticationProvider: JwtAuthenticationProvider,
                         private val userDetailsService: UserDetailsService,
                         private val errorHandler: ErrorHandler) : WebSecurityConfigurerAdapter() {

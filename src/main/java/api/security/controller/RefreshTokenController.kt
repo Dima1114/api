@@ -12,7 +12,7 @@ import venus.utillibrary.security.JwtUserDetails
 import venus.utillibrary.security.exceptions.JwtAuthenticationException
 import javax.servlet.http.HttpServletRequest
 
-@RestController
+//@RestController
 @RequestMapping("/auth/token")
 class RefreshTokenController(private val tokenService: JwtTokenService,
                              private val userDetailsService: UserDetailsService,

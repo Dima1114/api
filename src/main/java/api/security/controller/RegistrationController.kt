@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*
 import venus.utillibrary.security.JwtUserDetails
 import javax.validation.Valid
 
-@RestController
+//@RestController
 @RequestMapping("/auth/registration")
 class RegistrationController(val userService: UserService, val jwtTokenService: JwtTokenService) {
 

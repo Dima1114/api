@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import javax.validation.Valid
 
-@RestController
+//@RestController
 @RequestMapping("/auth/login")
 class LoginController(private val jwtTokenService: JwtTokenService,
                       private val userService: UserService,

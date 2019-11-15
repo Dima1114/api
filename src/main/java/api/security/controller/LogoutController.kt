@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
-@RestController
+//@RestController
 @RequestMapping("auth/logout")
 class LogoutController(private val userService: UserService) {
 

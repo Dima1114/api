@@ -15,8 +15,8 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore
 import javax.crypto.Cipher.PRIVATE_KEY
 
-//@Configuration
-//@EnableResourceServer
+@Configuration
+@EnableResourceServer
 class SecurityResourceServerConfig : ResourceServerConfigurerAdapter() {
 
     companion object {
