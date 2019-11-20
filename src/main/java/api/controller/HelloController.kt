@@ -15,4 +15,7 @@ class HelloController {
     @GetMapping
     @RoleSecured(Role.ROLE_ADMIN)
     fun hello(): ResponseEntity<*> = ResponseEntity("Hello World!", HttpStatus.OK)
+
+    @GetMapping("/user")
+    fun helloUser(): String = "Hello, User!"
 }

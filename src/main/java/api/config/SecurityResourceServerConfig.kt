@@ -1,6 +1,7 @@
 package api.config
 
 
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.Primary
@@ -13,22 +14,25 @@ import org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHand
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore
-import javax.crypto.Cipher.PRIVATE_KEY
+import javax.validation.constraints.NotNull
 
 @Configuration
 @EnableResourceServer
 class SecurityResourceServerConfig : ResourceServerConfigurerAdapter() {
 
+    @Value("\${jwt.security.resourceId}")
+    @NotNull
+    lateinit var resourceId: String
+
     companion object {
-        private const val RESOURCE_ID = "resource_id"
         private const val PRIVATE_KEY = "auth_private_key"
     }
 
     @Bean
     fun tokenEnhancer(): JwtAccessTokenConverter {
-        val converter = JwtAccessTokenConverter()
-        converter.setSigningKey(PRIVATE_KEY)
-        return converter
+        return JwtAccessTokenConverter().apply {
+            setSigningKey(PRIVATE_KEY)
+        }
     }
 
     @Bean
@@ -39,14 +43,15 @@ class SecurityResourceServerConfig : ResourceServerConfigurerAdapter() {
     @Bean
     @Primary
     fun tokenServices(): DefaultTokenServices {
-        val defaultTokenServices = DefaultTokenServices()
-        defaultTokenServices.setTokenStore(tokenStore())
-        defaultTokenServices.setSupportRefreshToken(true)
-        return defaultTokenServices
+        return DefaultTokenServices().apply {
+            setTokenStore(tokenStore())
+            setSupportRefreshToken(true)
+        }
     }
 
     override fun configure(resources: ResourceServerSecurityConfigurer) {
-        resources.resourceId(RESOURCE_ID).stateless(false)
+        resources.resourceId(resourceId)
+//                .stateless(false)
     }
 
     @Throws(Exception::class)
